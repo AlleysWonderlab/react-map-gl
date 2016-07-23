@@ -194,8 +194,7 @@ export default class MapGL extends Component {
       style: mapStyle,
       interactive: false,
       preserveDrawingBuffer: this.props.preserveDrawingBuffer
-      // TODO?
-      // attributionControl: this.props.attributionControl
+      attributionControl: this.props.attributionControl
     });
 
     d3.select(map.getCanvas()).style('outline', 'none');
