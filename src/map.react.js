@@ -193,7 +193,7 @@ export default class MapGL extends Component {
       bearing: this.props.bearing,
       style: mapStyle,
       interactive: false,
-      preserveDrawingBuffer: this.props.preserveDrawingBuffer
+      preserveDrawingBuffer: this.props.preserveDrawingBuffer,
       attributionControl: this.props.attributionControl
     });
 
