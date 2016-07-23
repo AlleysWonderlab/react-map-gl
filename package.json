@@ -52,6 +52,10 @@
     "testron": "^1.2.0",
     "uber-standard": "^5.1.0"
   },
+  "babel": {
+    "plugins": [ "transform-decorators-legacy" ],
+    "presets": [ "es2015", "react", "stage-2" ]
+  },
   "scripts": {
     "build": "babel src -d dist --copy-files --source-maps inline",
     "start": "budo ./example/main.js --live --open --port 3000 -- -t babelify -t envify",
